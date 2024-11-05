@@ -1,0 +1,15 @@
+model_type: "llama"
+model:
+  vocab_size: 38
+  d_model: 512
+  n_layer: 6
+  n_heads: 8
+  n_kv_heads: 8
+  bidirectional: False
+  hidden_dim: 2176
+  multiple_of: 64 # will be ignored if hidden_dim is set
+  norm_eps: 1e-5
+  max_length: 2048
+  dropout: 0.0
+  max_position_embeddings: 2048
+  rope_base_frequency: 500000

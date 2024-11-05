@@ -1,0 +1,24 @@
+model_type: "xlstm"
+model:
+  vocab_size: 38
+  mlstm_block: 
+    mlstm:
+      conv1d_kernel_size: 4
+      qkv_proj_blocksize: 4
+      num_heads: 4
+      proj_factor: 2.0
+      round_proj_up_to_multiple_of: 64
+      round_proj_up_dim_up: True
+      backend: chunkwise # one of ["parallel, "chunkwise"]
+      chunk_size: 1024 # only used when backend="chunkwise"
+      return_last_state: False
+  checkpoint_blocks: True # activation checkpointing for blocks (saves memory)
+  context_length: 131072
+  position_embeddings: "rot_1d" # ["none", "abs_1d", "abs_2d", "rot_1d", "rot_2d"]
+  max_seq_position_embeddings: 512
+  num_blocks: 16
+  dropout: 0.0
+  embedding_dim: 1024
+  bias: False
+  max_position_embeddings: 2048
+  rope_base_frequency: 500000

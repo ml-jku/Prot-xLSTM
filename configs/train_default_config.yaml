@@ -1,0 +1,49 @@
+
+# dataset config
+msa_memmap_path: "data/open_protein_set_memmap.dat"
+msa_memmap_meta_path: "data/open_protein_set_memmap_indices.csv"
+train_set: "data/cluster_training_set.txt"
+train_eval_set: "data/cluster_training_eval_set.txt"
+valid_set: "data/cluster_validation_set.txt"
+test_set: "data/cluster_testing_set.txt"
+sample_sequences: False
+seed_sequence_sampling: 42
+seed_datasets: 0
+max_msa_len: 131072
+fim_strategy: "multiple_span" 
+always_mask: False
+
+# Training params
+batch_size: 1
+gradient_accumulation_steps: 1
+learning_rate: 0.0006
+weight_decay: 0.1 
+beta1: 0.9 
+beta2: 0.95 
+max_grad_norm: 1. 
+warmup_steps: 500 
+scheduler: "constant" 
+num_cycles: 1
+num_epochs: 100
+dtype: "bfloat16"
+compute_only_fim_loss: False
+finetune_model_path: null
+restart_optimizer_and_scheduler: False
+
+# Evaluation params
+logging_steps: 10
+eval_steps: 50
+eval_accumulation_steps: 200
+save_steps: 50
+save_total_limit: 50
+output_dir: "outputs/"
+early_stopping_metric: "eval_train_loss" 
+patience: 10 
+loss_increase_factor: 1.005 
+
+# Wandb
+wandb_entity: ""
+wandb_project: "prot_xlstm"
+wandb_mode: "online" # "disabled"
+name_prefix: 
+name_suffix: 

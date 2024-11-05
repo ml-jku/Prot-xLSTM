@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "protxlstm"
+version = "0.1.0"
+description = "xLSTM-based homology-aware protein language model."
+readme = "README.md" 
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Niklas Schmidinger", email = "schmidinger@ml.jku.at"},
+    {name = "Lisa Schneckenreiter", email = "schneckenreiter@ml.jku.at"},
+    {name = "Sohvi Luukkonen", email = "luukkonen@ml.jku.at"},
+    {name = "Pieter-Jan Hoedt", email = "hoedt@ml.jku.at"},
+]
+keywords = ["protein language model", "xLSTM"]
+dependencies = [
+    "accelerate>=0.26.0",
+    "biopython",
+    "bottleneck",
+    "dacite",
+    "ipykernel",
+    "mamba_ssm",
+    "matplotlib",
+    "numpy<2.0",
+    "omegaconf",
+    "pandas",
+    "pyhmmer",
+    "rich",
+    "seaborn",
+    "torchmetrics",
+    "torch==2.2.2",
+    "tqdm",
+    "transformers==4.44.2",
+    "tueplots",
+    "wandb"
+    ]
+
+# Optional: URLs related to the project
+[project.urls]
+# repository = "https://github.com/yourgithubusername/your-repo"
+
+[tool.setuptools]
+packages = ["protxlstm"]

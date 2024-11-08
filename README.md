@@ -4,7 +4,7 @@
 
 # Prot-xLSTM
 
-This repository provides the code necessary to reproduce the experiments presented in the paper [Bio-xLSTM: Generative modeling, representation and in-context learning of biological and chemical sequences](TODO arxiv link). The code is organized across the following repositories:
+This repository provides the code necessary to reproduce the experiments presented in the paper [Bio-xLSTM: Generative modeling, representation and in-context learning of biological and chemical sequences](https://arxiv.org/abs/2411.04165). The code is organized across the following repositories:
 
 - [Prot-xLSTM](https://github.com/ml-jku/Prot-xLSTM) (current repository) 
 - [DNA-xLSTM](https://github.com/ml-jku/DNA-xLSTM) 

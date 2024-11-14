@@ -10,8 +10,8 @@ def create_sequence_df(model_name, family_idx, parameters_list=None, num_sequenc
 
     #load dataset
     dataset = ProteinMemmapDataset(
-            msa_memmap_path=f"{data_dir}/encoded_uniclust30f_int8_v2.dat",
-            msa_memmap_meta_path=f"{data_dir}/encoded_uniclust30f_int8_v2_memmap_indices.csv",
+            msa_memmap_path=f"{data_dir}open_protein_set_memmap.dat",
+            msa_memmap_meta_path=f"{data_dir}open_protein_set_memmap_indices.csv",
             subset_path=f"{data_dir}/cluster_testing_set.txt",
             sample=False,
             max_msa_len=-1,

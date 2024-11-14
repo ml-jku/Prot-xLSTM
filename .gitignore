@@ -165,7 +165,7 @@ cython_debug/
 
 # Outputs
 checkpoints/
-data/
+# data/
 outputs/
 outputs*/
 wandb/

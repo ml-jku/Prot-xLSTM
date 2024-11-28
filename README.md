@@ -17,7 +17,7 @@ This repository provides the code necessary to reproduce the experiments present
 ```bash
 git clone https://github.com/ml-jku/Prot-xLSTM.git
 cd Prot-xLSTM
-conda env create -f prot_xlstm_env.yaml
+conda env create -f prot_xlstm_env.yml
 conda activate prot_xlstm
 pip install -e .
 ```

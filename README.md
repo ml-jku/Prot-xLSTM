@@ -122,12 +122,11 @@ The underlying code was adapted from the [ProtMamba](https://github.com/Bitbol-L
 ## Citation
 
 ```latex
-@article{schmidinger2024bio-xlstm,
-  title={{Bio-xLSTM}: Generative modeling, representation and in-context learning of biological and chemical  sequences},
-  author={Niklas Schmidinger and Lisa Schneckenreiter and Philipp Seidl and Johannes Schimunek and Pieter-Jan Hoedt and Johannes Brandstetter and Andreas Mayr and Sohvi Luukkonen and Sepp Hochreiter and Günter Klambauer},
-  journal={arXiv},
-  doi = {},
-  year={2024},
-  url={}
+@inproceedings{schmidinger2025bioxlstm,
+   title={{Bio-xLSTM}: Generative modeling, representation and in-context learning of biological and chemical sequences},
+   author={Niklas Schmidinger and Lisa Schneckenreiter and Philipp Seidl and Johannes Schimunek and Pieter-Jan Hoedt and Johannes Brandstetter and Andreas Mayr and Sohvi Luukkonen and Sepp Hochreiter and G{\"u}nter Klambauer},
+   booktitle={The Thirteenth International Conference on Learning Representations},
+   year={2025},
+   url={https://openreview.net/forum?id=IjbXZdugdj}
 }
 ```
